@@ -1,18 +1,18 @@
 ---
 layout: page
 title: About
-description: 打码改变世界
-keywords: Zhuang Ma, 马壮
+description: 反正不要钱，多少信一点
+keywords: CaiRong Lian， 连才荣
 comments: true
 menu: 关于
 permalink: /about/
 ---
 
-我是马壮，码而生，码而立。
+多努力一点，离梦想更近一点。
 
-仰慕「优雅编码的艺术」。
+少一点摸鱼。
 
-坚信熟能生巧，努力改变人生。
+喜爱精简高效的代码
 
 ## 联系
 
