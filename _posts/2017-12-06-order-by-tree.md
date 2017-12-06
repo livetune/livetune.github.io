@@ -1,11 +1,11 @@
 ---
 layout: post
-title: js二叉树排序
+title: js二叉树遍历
 categories: js
-description: 使用js完成二叉树前序，中序，后序。
-keywords: 二叉树，排序
+description: 使用js完成二叉树前序，中序，后序，遍历
+keywords: 二叉树，遍历
 ---
-# 前序
+## 前序
 ```
 function PreOrderTraverse(parent) {
   if(parent == null) {
@@ -17,7 +17,7 @@ function PreOrderTraverse(parent) {
 }
 ```
 
-#中序
+## 中序
 ```
 function InOrderTraverse(node) {
   if (node == null) {
@@ -29,7 +29,7 @@ function InOrderTraverse(node) {
   InOrderTraverse(node.rchild);
 }
 ```
-# 后序
+## 后序
 ```
 function PostOrderTraverse(node) {
   if (node == null) {
