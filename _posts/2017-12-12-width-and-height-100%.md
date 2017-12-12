@@ -22,14 +22,12 @@ keywords: padding, 宽高相等
 
   img {
     position: absolute;
-    left: 50%;
+    left: 0
     bottom: 0;
-    transform: translateX(-50%);
-
-    max-height: 100%;
-    max-width: 100%;
+    width:100%;
+    height:100%
   }
-
+  
 ```
 
 ## html
