@@ -3,7 +3,7 @@ layout: post
 title: js二叉树遍历
 categories: js
 description: 使用js完成二叉树前序，中序，后序，遍历
-keywords: 二叉树，遍历
+keywords: 二叉树, 遍历
 ---
 ## 前序
 ```
