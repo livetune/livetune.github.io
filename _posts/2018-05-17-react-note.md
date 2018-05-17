@@ -19,5 +19,4 @@ jQ即可的方式直观易懂，对于初学者十分适用，但是当项目逐
 都是 React 组件的重新渲染，至于如何只修改必要的 DOM 部分，则完全交给 React 去操
 作，开发者并不需要关心.
 ```
-
 [![1-5.png](https://i.loli.net/2018/05/17/5afd577ba4fe2.png)](https://i.loli.net/2018/05/17/5afd577ba4fe2.png)
