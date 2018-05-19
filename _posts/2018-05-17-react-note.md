@@ -23,7 +23,7 @@ jQ即可的方式直观易懂，对于初学者十分适用，但是当项目逐
 
 ### 父组件向子组件通过prop来传递数据
 
-子组件可通过this.prop.a获得a的值。例：
+例：子组件可通过this.props.a获得a的值。
 
 ```React
 <Example a={10}/>
@@ -44,3 +44,26 @@ onClickButton() {
     this.setState({count:++this.state.count})
 }
 ```
+
+### 生命周期
+
+React 严格定义了组件的生命周期，生命周期可能会经历如下三个过程：
+装载过程（Mount ），也就是把组件第一次在 DOM 树中渲染的过程；
+更新过程（Update ），当组件被重新渲染的过程；
+卸载过程（Unmount ），组件从 DOM 中删除的过程;
+每个过程都有一些相对应的函数。
+
+装载过程调用以下几个函数：
+constructor: 类构造函数
+getlnitialState: ReactClass的状态初始化(ES6不触发)
+getDefaultProps: ReactClass获得默认props(ES6不触发)
+componentWillMount: 装载渲染前调用
+render: 描述即将渲染JSX的函数
+componentDidMount: 渲染成功后调用（仅浏览器端调用）
+
+更新过程调用以下几个函数：
+componentWillReceiveProps: 调用render后被调用
+shouldComponentUpdate: 是否需要渲染组件
+componentWillUpdate: 重新渲染前调用
+render: 描述即将渲染JSX的函数
+componentDidUpdate: 重新渲染成后调用
