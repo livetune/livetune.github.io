@@ -20,3 +20,9 @@ jQ即可的方式直观易懂，对于初学者十分适用，但是当项目逐
 [![1-5.png](https://i.loli.net/2018/05/17/5afd577ba4fe2.png)](https://i.loli.net/2018/05/17/5afd577ba4fe2.png)
 
 ## Class2 React的生命周期
+
+父组件向子组件通过prop来传递数据 例：
+
+```React
+<Example a={10}/>
+```
