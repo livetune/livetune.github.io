@@ -21,8 +21,26 @@ jQ即可的方式直观易懂，对于初学者十分适用，但是当项目逐
 
 ## Class2 React的生命周期
 
-父组件向子组件通过prop来传递数据 例：
+### 父组件向子组件通过prop来传递数据
+
+子组件可通过this.prop.a获得a的值。例：
 
 ```React
 <Example a={10}/>
+```
+
+### 组件中的状态用state记录。
+
+通常在构造函数时，使用this.state进行赋值，在需要改变状态时，通过this.setState来进行状态改变，而后渲染界面。例：
+
+```React
+constructor(props) {
+    super(props);
+    this.onClickButton = this.onClickButton.bind(this);
+    this.state = { count: 0 };
+}
+
+onClickButton() {
+    this.setState({count:++this.state.count})
+}
 ```
