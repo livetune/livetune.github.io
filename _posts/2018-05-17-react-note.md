@@ -58,15 +58,17 @@ React 严格定义了组件的生命周期，生命周期可能会经历如下�
 每个过程都有一些相对应的函数。
 
 装载过程调用以下几个函数
-constructor: 类构造函数getlnitialState: ReactClass的状态初始化(ES6不触发)  
-getDefaultProps: ReactClass获得默认props(ES6不触发)  
-componentWillMount: 装载渲染前调用  
-render: 描述即将渲染JSX的函数  
-componentDidMount: 渲染成功后调用（仅浏览器端调用）  
+
+- constructor: 类构造函数getlnitialState: ReactClass的状态初始化(ES6不触发)
+- getDefaultProps: ReactClass获得默认props(ES6不触发)
+- componentWillMount: 装载渲染前调用
+- render: 描述即将渲染JSX的函数
+- componentDidMount: 渲染成功后调用（仅浏览器端调用）
 
 更新过程调用以下几个函数：
-componentWillReceiveProps: 调用render后被调用
-shouldComponentUpdate: 是否需要渲染组件
-componentWillUpdate: 重新渲染前调用
-render: 描述即将渲染JSX的函数
-componentDidUpdate: 重新渲染成后调用
+
+- componentWillReceiveProps: 调用render后被调用
+- shouldComponentUpdate: 是否需要渲染组件
+- componentWillUpdate: 重新渲染前调用
+- render: 描述即将渲染JSX的函数
+- componentDidUpdate: 重新渲染成后调用
