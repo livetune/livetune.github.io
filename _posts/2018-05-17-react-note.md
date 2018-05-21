@@ -7,7 +7,7 @@ keywords: react,学习笔记
 ---
 # 开始记录每章的学习
 
-## Class1 React 和 jquery的不同
+## React 和 jquery的不同
 
 jQ即可的方式直观易懂，对于初学者十分适用，但是当项目逐渐变得庞
 大时，用 jQuery 写出的代码往往互相纠缠，
@@ -19,7 +19,7 @@ jQ即可的方式直观易懂，对于初学者十分适用，但是当项目逐
 
 [![1-5.png](https://i.loli.net/2018/05/17/5afd577ba4fe2.png)](https://i.loli.net/2018/05/17/5afd577ba4fe2.png)
 
-## Class2 React的生命周期
+## React的生命周期
 
 ### 1.父子组件之间传值
 
