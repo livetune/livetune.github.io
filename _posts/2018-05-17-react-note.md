@@ -21,12 +21,19 @@ jQ即可的方式直观易懂，对于初学者十分适用，但是当项目逐
 
 ## Class2 React的生命周期
 
-### 1.父组件向子组件通过prop来传递数据
+### 1.父子组件之间传值
 
+父组件向子组件通过prop来传递数据
 例：子组件可通过this.props.a获得a的值。
 
 ```React
 <Example a={10}/>
+```
+
+子组件通过函数的方式向父组件传值。
+
+```React
+<Example onUpdate={this.onUpdate}/>
 ```
 
 ### 2.组件中的状态用state记录。
@@ -72,3 +79,7 @@ React 严格定义了组件的生命周期，生命周期可能会经历如下�
 - componentWillUpdate: 重新渲染前调用
 - render: 描述即将渲染JSX的函数
 - componentDidUpdate: 重新渲染成后调用
+
+卸载过程只有一个函数：
+
+- componentWillUnmount: Dom树删除之前调用
