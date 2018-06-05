@@ -2,10 +2,10 @@
 layout: post
 title: react学习笔记
 categories: react
-description: 《深入浅出react和redux》的笔记，了解简单的react通讯
+description: 《深入浅出react和redux》的笔记
 keywords: react,学习笔记
 ---
-# 开始记录每章的学习
+# 开始记录每章的学习，了解简单的react通讯
 
 ## React 和 jquery的不同
 
