@@ -44,9 +44,9 @@ function max_heap(node) {
     } else if(right.value===undefined&&left.value!==undefined) { // own left children
         left.value>node.value?change_value(left.index,node.index):'';
     } else {
-        if(node.value<left.value&&left.value>right.value) { // own left and right children
+        if(node.value<left.value&&left.value>=right.value) { // own left and right children
             change_value(left.index,node.index)
-        } else if(node.value<right.value&&right.value>left.value) {
+        } else if(node.value<right.value&&right.value>=left.value) {
             change_value(right.index,node.index)
         }
     }
