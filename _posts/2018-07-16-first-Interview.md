@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 第一次面试(鹅厂外包岗位)
+title: 第一次面试(凉凉)
 categories: interview
 description: 毕业后第一次面试
 keywords: 面试
@@ -97,6 +97,12 @@ array_slice — 从数组中取出一段
 ### 以前做过项目的架构
 
 答得不是很好，这里就不列出了。
+
+### tp3和tp5 有什么不同的地方
+
+答得有点模糊，感觉最大的不同应该是一些命名规范和命名空间变了，数据库的查询函数也变了许多。
+
+> [tp手册 tp3升级至tp5](https://www.kancloud.cn/manual/thinkphp5/163239#V32V50_188)
 
 ### 程序题
 
