@@ -39,7 +39,7 @@ function heapOrder(arr) {
 function max_heap(node) {
     let left = {index:node.index*2+1,value:arr[node.index*2+1]}; // left children
     let right = {index:node.index*2+2,value:arr[node.index*2+2]}; //right children
-    if(left.value===undefined) {  // no children 
+    if(left.value===undefined) {  // no children
         return;
     } else if(right.value===undefined&&left.value!==undefined) { // own left children
         left.value>node.value?change_value(left.index,node.index):'';
