@@ -22,31 +22,31 @@ strpos,strstr。我只写了两个，其他的都不太记得了。
 > strstr 截取字符串首次出现到结尾的字符串。  
 > strchr strstr的别名  
 > strcmp 字符串比较，区分大小写  
-> str_split 字符串转数组
-> str_shuffle 打乱字符串
-> str_replace 字符串替换
-> str_repeat 字符串重复
-> str_pad 字符串填充
-> [http://php.net/manual/zh/ref.strings.php]( 官网)
+> str_split 字符串转数组  
+> str_shuffle 打乱字符串  
+> str_replace 字符串替换  
+> str_repeat 字符串重复  
+> str_pad 字符串填充  
+> [http://php.net/manual/zh/ref.strings.php]( 官网)  
 
 ### 写几个PHP的数组处理函数。
 
-array_push,array_merge。只记得这两个，不知道排序算不算数组处理函数就没有回答了。
-> array_change_key_case — 将数组中的所有键名修改为全大写或小写
-array_chunk — 将一个数组分割成多个
-array_column — 返回数组中指定的一列
-array_combine — 创建一个数组，用一个数组的值作为其键名，另一个数组的值作为其值
-array_keys — 返回数组中部分的或所有的键名
-array_map — 为数组的每个元素应用回调函数
-array_merge — 合并一个或多个数组
-array_multisort — 对多个数组或多维数组进行排序
-array_pad — 以指定长度将一个值填充进数组
-array_pop — 弹出数组最后一个单元（出栈）
-array_replace — 使用传递的数组替换第一个数组的元素
-array_reverse — 返回单元顺序相反的数组
-array_search — 在数组中搜索给定的值，如果成功则返回首个相应的键名
-array_shift — 将数组开头的单元移出数组
-array_slice — 从数组中取出一段
+array_push,array_merge。只记得这两个，不知道排序算不算数组处理函数就没有回答了。  
+> array_change_key_case — 将数组中的所有键名修改为全大写或小写  
+array_chunk — 将一个数组分割成多个  
+array_column — 返回数组中指定的一列  
+array_combine — 创建一个数组，用一个数组的值作为其键名，另一个数组的值作为其值  
+array_keys — 返回数组中部分的或所有的键名  
+array_map — 为数组的每个元素应用回调函数  
+array_merge — 合并一个或多个数组  
+array_multisort — 对多个数组或多维数组进行排序  
+array_pad — 以指定长度将一个值填充进数组  
+array_pop — 弹出数组最后一个单元（出栈）  
+array_replace — 使用传递的数组替换第一个数组的元素  
+array_reverse — 返回单元顺序相反的数组  
+array_search — 在数组中搜索给定的值，如果成功则返回首个相应的键名  
+array_shift — 将数组开头的单元移出数组  
+array_slice — 从数组中取出一段  
 [http://php.net/manual/zh/book.array.php](官网)
 
 ### MySQL统计部门人数大于2的部门
