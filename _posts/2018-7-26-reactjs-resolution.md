@@ -12,7 +12,7 @@ keywords: 语法,javascript
 需要添加如下设置:
 
 ```js
-// webpack.config.js 
+// webpack.config.js
 entry: [
     require.resolve('./polyfills'),
     'react-hot-loader/patch', //添加此处
@@ -23,8 +23,13 @@ entry: [
 }
 ```
 
-### 关于路由history 
+### 关于路由history
 
-在几份源码中，他们路由使用的history来自不同的对象，主要原因应该是react-router的版本不同,在v4中不提供bowserHistory等方法的导出。一般还是使用history包的createBrowserHistory来创建一个history对象
+在几份源码中，他们路由使用的BrowserHistory来自不同的对象，主要原因应该是react-router的版本不同,在v4中不提供BowserHistory等方法的导出。一般还是使用history包的createBrowserHistory来创建一个history对象。
 
-[https://github.com/brickspert/blog/issues/1](https://github.com/brickspert/blog/issues/1)
+[https://github.com/brickspert/blog/issues/3](https://github.com/brickspert/blog/issues/3)
+
+### 关于 express 与 koa 使用异步路由
+
+express 使用 CPS 风格（就是异步回调），而 koa2 是
+ promise，async/await 的编码风格。所以在express中使用mongoose进行查询可以使用回调函数，而 koa2 中则需要加上 async 关键字使用 await 使查询变为同步。
