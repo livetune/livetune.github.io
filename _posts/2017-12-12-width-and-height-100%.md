@@ -8,8 +8,7 @@ keywords: padding, 宽高相等
 
 ## 原理
 
-将父容器的padding-top 或者 bottom 设为 100% 高度设为0，得到宽高相等的容器
-使用决对定位将图片把父容器全覆盖
+在css中，padding的百分比是相对于父容器的宽度的。将父容器的padding-top 或者 bottom 设为 100% 高度设为0，得到宽高相等的容器，使用决对定位将图片把父容器全覆盖。
 
 ## css
 ```
@@ -32,6 +31,7 @@ keywords: padding, 宽高相等
 ```
 
 ## html
+
 ```
 <div class="img"><img src="bao.jpg" alt=""></div>
 ```

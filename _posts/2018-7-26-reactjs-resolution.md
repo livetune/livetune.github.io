@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 记录一些react初始化遇到的问题
-categories: interview
+categories: react
 description: 记录一些react初始化遇到的问题
 keywords: 语法,javascript
 ---
