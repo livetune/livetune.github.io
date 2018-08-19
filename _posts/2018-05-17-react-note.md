@@ -69,7 +69,8 @@ React 严格定义了组件的生命周期，生命周期可能会经历如下�
 
 装载过程调用以下几个函数
 
-- constructor: 类构造函数getlnitialState: ReactClass的状态初始化(ES6不触发)
+- constructor: 类构造函数
+- getlnitialState: ReactClass的状态初始化(ES6不触发)
 - getDefaultProps: ReactClass获得默认props(ES6不触发)
 - componentWillMount: 装载渲染前调用
 - render: 描述即将渲染JSX的函数
