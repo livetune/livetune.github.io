@@ -7,10 +7,10 @@ keywords: 语法,javascript
 ---
 
 ### 使用 sass
-
+在 react中使用sass，需要配置webpack.config.dev.js和webpack.config.prod.js这两个文件，以保证在开发环境以及生产环境中都可以使用sass
 ```js
         // npm install node-sass sass-loader --save
-        // webpack.config.dev.js
+        // webpack.config.dev.js && webpack.config.prod.js
          {
             test: /\.s?css$/, // 正则加入 s? 匹配 scss 文件
             use: [

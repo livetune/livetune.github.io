@@ -26,21 +26,21 @@ jQ即可的方式直观易懂，对于初学者十分适用，但是当项目逐
 父组件向子组件通过prop来传递数据
 例：子组件可通过this.props.a获得a的值。
 
-```React
+```jsx
 <Example a={10}/>
 ```
 
 子组件通过函数的方式向父组件传值。
 
-```React
+```jsx
 <Example onUpdate={this.onUpdate}/>
 ```
 
 ### 2.组件中的状态用state记录。
 
-通常在构造函数时，使用this.state进行赋值，在需要改变状态时，通过this.setState来进行状态改变，而后渲染界面。例：
+通常在构造函数时，使用this.state进行赋值，在需要改变状态时，通过this.setState来进行状态改变，而后渲染界面,setState是一个异步的函数，如果在同一个函数里读取state，将会得到未改变的值例：
 
-```React
+```js
 constructor(props) {
     super(props);
     this.onClickButton = this.onClickButton.bind(this);
@@ -48,9 +48,12 @@ constructor(props) {
 }
 
 onClickButton() {
-    this.setState({count:++this.state.count})
+    this.setState({count:++this.state.count});
+    // console.log(this.state.count) == 0;
 }
 ```
+
+如果需要同步获取，可使用 Promise 或者 async/await 来将 setState 变为同步函数
 
 ### 3.生命周期
 
