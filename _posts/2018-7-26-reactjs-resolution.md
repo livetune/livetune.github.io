@@ -6,8 +6,14 @@ description: 记录一些react初始化遇到的问题
 keywords: 语法,javascript
 ---
 
+# 前言
+
+刚开始使用 React 时碰到了许多不太懂的问题，在这里记录下部分已经解决的问题。
+
 ### 使用 sass
-在 react中使用sass，需要配置webpack.config.dev.js和webpack.config.prod.js这两个文件，以保证在开发环境以及生产环境中都可以使用sass
+
+在 react 中使用 sass，需要配置 webpack.config.dev.js 和 webpack.config.prod.js 这两个文件，以保证在开发环境以及生产环境中都可以使用 sass
+
 ```js
         // npm install node-sass sass-loader --save
         // webpack.config.dev.js && webpack.config.prod.js
