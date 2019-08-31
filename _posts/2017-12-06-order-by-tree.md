@@ -114,8 +114,8 @@ function outOrder(root) {
     while (stack.length || curr) {
         if (curr) {
             console.log(curr.val) // 输出当前节点
-            stack.push(curr.left) // 压入右节点
-            curr = curr.right  // 当前节点设置为左子树
+            stack.push(curr.left) // 压入左节点
+            curr = curr.right  // 当前节点设置为右子树
         } else {
             // 当左子树都已经遍历完，没有左子树时，就是最左端的节点
             curr = stack.pop()
