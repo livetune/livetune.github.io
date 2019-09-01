@@ -107,7 +107,7 @@ function inOrder(root) {
 ## 后序（循环）
 后序遍历的顺序是左右中, 后序遍历反过来就是中右左，也就是说，中序遍历的左右节点互换，就可以得到倒序的后序遍历了
 
-```js
+```javascript
 function outOrder(root) {
     let stack = []  // 存储调用栈
     let curr = root // 头结点
