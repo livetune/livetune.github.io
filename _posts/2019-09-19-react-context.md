@@ -1,7 +1,7 @@
 ---  
 layout: post  
 title: React Context 的使用
-categories: notes,react  
+categories: [notes,react]  
 description:  React Context 的使用
 keywords: notes,react  
 ---  

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 记录一个小米 webview，touchend 事件失效的bug
-categories: bug
+categories: [bug]
 description:  在移动端上使用轮播组件时，小米的webview上的touchend事件失效
 keywords: bug
 ---

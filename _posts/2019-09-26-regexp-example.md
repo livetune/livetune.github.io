@@ -1,7 +1,7 @@
 ---  
 layout: post  
 title: 记录一些已经用过的正则表达式
-categories: regexp,example 
+categories: [regexp,example] 
 description:  React Context 的使用
 keywords: regexp  
 ---  

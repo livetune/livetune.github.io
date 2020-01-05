@@ -1,7 +1,7 @@
 ---  
 layout: post  
 title: React Hooks的一些学习笔记（1）
-categories: notes,react  
+categories: [notes,react]  
 description:  React Hooks的一些学习笔记  
 keywords: notes,react  
 ---  

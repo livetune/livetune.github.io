@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 使用正则来获取 cookie 的值
-categories: js,正则表达式
+categories: [js,正则表达式]
 description: 通过正则表达式的组匹配来获取 cookie 的值
 keywords: JavaScript, 正则表达式
 ---
