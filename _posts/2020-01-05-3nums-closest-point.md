@@ -2,7 +2,7 @@
 layout: post  
 title: leetcode 最接近三数之和
 categories: [two-pointers, algorithm] 
-description:  React Context 的使用
+description:  使用双指针解最接近三数之和
 keywords: 算法  
 ---  
 今年要多做一些算法题了，算法、数据结构、设计模式之类的基础都还比较薄弱，希望今年自己可以在算法方面提高一些。
