@@ -5,7 +5,7 @@ baseurl:
 url: https://livetune.github.io
 date_format: "ordinal"
 title: 打码
-subtitle: "打码改变人生"
+subtitle: "明日复明日，明天再打代码"
 description: "连才荣的个人博客"
 keywords: 码志, CaiRong lian, livetune
 timezone: Asia/ShenZhen
@@ -33,11 +33,7 @@ navs:
   -
     href: /categories/
     label: 分类
-
-  -
-    href: /wiki/
-    label: 维基
-
+    
   -
     href: /links/
     label: 链接

@@ -1,11 +1,6 @@
-- name: Software Engineer Keywords
+- name: 技能
   keywords:
-      - C
-      - C++
-      - Python
-      - Node
-      - Web
-
-- name: Mobile Developer Keywords
-  keywords:
-      - Android
+      - React
+      - Vue
+      - Stylus / Less
+      - Webpack
