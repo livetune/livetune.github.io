@@ -30,7 +30,12 @@
 .home .collection-head .container {
   display: flex;
 }
-
+.home .container-avatar {
+  margin: auto;
+  width: 7em;
+  height: 7em;
+  border-radius: 50%;
+}
 @media (max-width:50em) {
   .home .collapsed .icon-bar {
     background-color: white;
@@ -43,10 +48,4 @@
     width: 4em;
     height: 4em;
   }
-}
-.home .container-avatar {
-  margin: auto;
-  width: 7em;
-  height: 7em;
-  border-radius: 50%;
 }
