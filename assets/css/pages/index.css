@@ -27,6 +27,9 @@
     color: #fff
 }
 
+.home .collection-head .container {
+  display: flex;
+}
 
 @media (max-width:50em) {
   .home .collapsed .icon-bar {
@@ -36,4 +39,14 @@
   .home .collection-head .collection-header {
     font-size: 1.25em;
   }
+  .home .container-avatar {
+    width: 4em;
+    height: 4em;
+  }
+}
+.home .container-avatar {
+  margin: auto;
+  width: 7em;
+  height: 7em;
+  border-radius: 50%;
 }
