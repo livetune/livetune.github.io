@@ -27,7 +27,7 @@ React 没有提供直接将可复用性行为“附加"到组件中的途径（�
 ### State Hook
 
 我们可以在函数组件里使用 useState 来创建一个 state。React 在重复渲染时会保留这个state，与 class 组件中的 state 一样。useState的参数是 state 的默认值，返回的第一个值的是 state，第二个则是对这个 state 进行更新的函数，可以在事件处理或者是其他地方调用。
-```js
+```javascript
 import React, { useState } from 'react';
 
 function Example() {
@@ -46,7 +46,7 @@ function Example() {
 ```
 
 当然也可以在组件里多次创建不同的 state 。
-```js
+```javascript
 function ExampleWithManyStates() {
   // 声明多个 state 变量！
   const [age, setAge] = useState(42);
@@ -60,7 +60,7 @@ function ExampleWithManyStates() {
 
 我们可以把在组件中执行一些数据更新、订阅或者手动修改 Dom 的操作叫做“副作用”，也可以简称叫“作用”。  
 useEffect 就是一个Effect Hook，给了函数组件操作副作用的能力。与 class 的 cDM、cDUp、cWUn 具有相同的用途，只不过是被合成了同一个Api。
-```js
+```javascript
 import React, { useState, useEffect } from 'react';
 
 function Example() {
@@ -84,7 +84,7 @@ function Example() {
 ```
 通常在 useEffect 中返回一个组件销毁时需要执行的函数, useEffect 的第二个参数是一个数组，可以规定是否需要重新执行副作用。
 
-```js
+```javascript
 import React, { useState, useEffect } from 'react';
 
 function FriendStatus(props) {

@@ -18,7 +18,7 @@ keywords: JavaScript, 正则表达式
 
 在鼠标按下之后，发起个定时器，350ms 之后如果鼠标还未抬起，就判断为长按。同时如果在 350ms 内鼠标移出了盒子，或者抬起鼠标，便清除定时器。
 
-```js
+```javascript
 // 开始按下
 startTouch = e => {
   const handle = function() {
@@ -53,7 +53,7 @@ endTouch = e => {
 
 ### 核心代码
 
-```js
+```javascript
 function isInArea(elm, start, end) {
   const startPoint = {
     x: Math.min(start.x, end.x),

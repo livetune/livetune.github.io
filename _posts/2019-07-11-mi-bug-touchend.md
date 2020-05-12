@@ -16,7 +16,7 @@ keywords: bug
 网上查了一下，似乎是小米的 webview 似乎是在长按的时候不调用 touchend 事件，导致轮播组件不会再手指抬起时回到上一页或者下一页。解决方案是使用 touchcancel 替代 touchend 事件。touchend 是手指离开屏幕时触发的时间，touchcancel 是触控点被特定的方式打断的时候会触发的时间。
 
 ### 实现
-```js
+```javascript
 // 直接替代 touchend 时间
 document.querySelector('.target').addEventListener('touchcancel',e=>{
     touchendFunc()

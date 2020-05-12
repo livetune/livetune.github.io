@@ -26,13 +26,13 @@ jQ即可的方式直观易懂，对于初学者十分适用，但是当项目逐
 父组件向子组件通过prop来传递数据
 例：子组件可通过this.props.a获得a的值。
 
-```jsx
+```javascript
 <Example a={10}/>
 ```
 
 子组件通过函数的方式向父组件传值。
 
-```jsx
+```javascript
 <Example onUpdate={this.onUpdate}/>
 ```
 
@@ -40,7 +40,7 @@ jQ即可的方式直观易懂，对于初学者十分适用，但是当项目逐
 
 通常在构造函数时，使用this.state进行赋值，在需要改变状态时，通过this.setState来进行状态改变，而后渲染界面,setState是一个异步的函数，如果在同一个函数里读取state，将会得到未改变的值例：
 
-```js
+```javascript
 constructor(props) {
     super(props);
     this.onClickButton = this.onClickButton.bind(this);

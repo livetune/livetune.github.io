@@ -24,7 +24,7 @@ keywords: 算法
 ### 解法1 直接遍历
 
 
-```js
+```javascript
 /**
  * @param {ListNode[]} lists
  * @return {ListNode}
@@ -75,7 +75,7 @@ var mergeKLists = function (lists) {
 ### 解法2 分治
 
 核心是每次都要合并两个链表，将合并 k 个链表变成合并多次两个有序的链表。
-```js
+```javascript
 /**
  * @param {ListNode[]} lists
  * @return {ListNode}

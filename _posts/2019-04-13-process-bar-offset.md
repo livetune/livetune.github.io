@@ -65,7 +65,7 @@ keywords: css变量,js
 
 2. 点击的使用只用监听最外层的 slider 标签即可
 
-   ```js
+   ```javascript
    document.querySelector('.slider').addEventListener('click', function(e) {
      this.style.setProperty('--percent', (e.offsetX / this.clientWidth) * 100)
    })
@@ -84,7 +84,7 @@ keywords: css变量,js
 3. 拖动。
    可以不用处理 thumb 的拖动，还是只用监听 slider 的 mousedown 事件，当 mousedown 事件触发时需要为 slider 添加 mousover，来事实计算进度条的位置，当鼠标抬起时也需要将 mouseover 事件移除。
 
-   ```js
+   ```javascript
    const dragHandle = function(e1) {
      // e1.clientX 指针在页面中的X坐标
      // $('.slider').getBoundingClientRect().x slider 相对于页面的X坐标

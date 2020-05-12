@@ -14,7 +14,7 @@ Context 是 React 中一个比较常见的 Api，通常用于跨组件的通讯�
 ### 何时使用Context
 Context 用于在各种组件事件共享一些全局的数据，如登录状态、主题、国际化等。如下面是一个显示登录状态的例子，我们可以修改 **loginState** 这个变量来控制 Login 组件是否登录
 
-```js 
+```javascript 
 import React, { useContext } from 'react'
 const Context = React.createContext('loginState')
 function Login() {
@@ -42,7 +42,7 @@ Context 的主要场景是在不同层级的组件之间访问相同的一些数
 
 如果只是想要避免层层传递 props，组件组合有的时候会是一个更好的方案。下面的例子就是直接将DashBoard 这个组件作为 props 传递下去了，当props多的时候可以有效的减少 props的数量，复杂的场景也可以使用render props。
 
-```js
+```javascript
 import React from 'react'
 
 function Login({ isLogin }) {
@@ -72,7 +72,7 @@ export default Home
 ### Api
 
 #### React.createContext
-```js
+```javascript
 const MyContext = React.createContext(defaultValue);
 ```
 
@@ -80,11 +80,11 @@ const MyContext = React.createContext(defaultValue);
 
 #### Context.Provider / Context.Consumer
 
-```js
+```javascript
 <MyContext.Provider value={/* 某个值 */}>
 ```
 新建的 Context 对象会返回 Provider 和 Comsumer，Provider组件 允许 Consumer组件 订阅context 的变化。Provider 组件可以和多个 Consumer 组件右对应关系，多个Provider 也可以多层嵌套, 相同的 Provider 里层的会覆盖外层的 value。
-```js
+```javascript
 <MyContext.Consumer>
   {value => /* 基于 context 值进行渲染*/}
 </MyContext.Consumer>
@@ -96,7 +96,7 @@ Consumer 组件里可以使用函数作为子元素来获取相对应 Provider �
 #### contextType / ContextHooks 
 为组件设置 contextType 属性，可以在组件里不适用 Consumer 组件来获取 context 所对应的值，直接读取组件的 context 属性即可
 
-```js
+```javascript
 class MyClass extends React.Component {
   static ccontextType = MyContext
   render() {
@@ -107,7 +107,7 @@ class MyClass extends React.Component {
 ```
 使用 useContext 也可以有相同的效果
 
-```js
+```javascript
 function Login() {
   const isLogin = useContext(MyContext)
   return isLogin ? 'login' : 'need to login'

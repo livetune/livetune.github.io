@@ -10,7 +10,7 @@ keywords: 数据结构,算法,翻转二叉树
 ## 生成二叉树
 
 可以用js对象实现二叉树，一个节点为一个对象，拥有左右子节点的应用，和当前节点的值.
-```js
+```javascript
 function Node(val, left, right) {
     this.left = left;
     this.right = right;
@@ -18,7 +18,7 @@ function Node(val, left, right) {
 }
 ```
 定义一个二叉树对象来描述这颗二叉树
-```js
+```javascript
 
 class BST {
     constructor() {
@@ -35,7 +35,7 @@ class BST {
 
 插入节点，首先判断节点的值是否比父节点的小，是的话在判断是否已经存在左节点，存在则将父节点设为那个左节点继续判断，不存在则将父节点的左节点设为当前节点。
 
-```js
+```javascript
 insert(val) {
         let n = new Node(val, null, null);
         if (this.root === null) {

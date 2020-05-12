@@ -10,7 +10,7 @@ keywords: JavaScript, 正则表达式
 
 ### DEMO
 
-```js
+```javascript
 // 获取一个名字为 userid 的 cookie 值
 
 document.cookie.replace(/(?:(?:^|.*;\s*)userid\s*\=\s*([^;]*).*$)|^.*$/, '$1')
@@ -33,7 +33,7 @@ document.cookie.replace(/(?:(?:^|.*;\s*)userid\s*\=\s*([^;]*).*$)|^.*$/, '$1')
 
 ### 函数 getCookie
 
-```js
+```javascript
 function getCookie(str) {
   return document.cookie.replace(
     new RegExp(`(?:(?:^|.*;\\s*)${str}\\s*\\=\\s*([^;]*).*$)|^.*$`),

@@ -13,7 +13,7 @@ keywords: 语法,javascript
 
 在 react 中使用 sass，需要配置 webpack.config.dev.js 和 webpack.config.prod.js 这两个文件，以保证在开发环境以及生产环境中都可以使用 sass
 
-```js
+```javascript
         // npm install node-sass sass-loader --save
         // webpack.config.dev.js && webpack.config.prod.js
          {
@@ -36,7 +36,7 @@ keywords: 语法,javascript
 因为 react-hot-loader 的热更新是依赖于 webpack-dev-server，后者是在打包文件改变时更新打包文件或者 reload 刷新整个页面，而前者会根据 stateNode 节点的更新对比，只更新改变的 reactDom 节点，从而保留了未改变的 state 值，更适用于 react 的开发更新模式。
 需要添加如下设置:
 
-```js
+```javascript
 // webpack.config.js
 entry: [
   require.resolve("./polyfills"),
@@ -61,7 +61,7 @@ promise，async/await 的编码风格。所以在 express 中使用 mongoose 进
 
 ### redux-thunk 等中间件
 
-```js
+```javascript
 \\ redux-thunk 源码
 function createThunkMiddleware(extraArgument) {
  return ({ dispatch, getState }) => next => action => {
@@ -79,7 +79,7 @@ thunk.withExtraArgument = createThunkMiddleware;
 export default thunk;
 ```
 
-```js
+```javascript
 \\ applyMiddleware
 
 export default function applyMiddleware(...middlewares) {
@@ -109,7 +109,7 @@ export default function applyMiddleware(...middlewares) {
 
 ### 在使用 connect 连接容器组件和展示组件时，如果 mapDispatchToProps 参数填的是对象，将会自动使用 bindActionCreator
 
-```js
+```javascript
 //  mapDispatchToProps.js
 export function whenMapDispatchToPropsIsObject(mapDispatchToProps) {
   return mapDispatchToProps && typeof mapDispatchToProps === "object"

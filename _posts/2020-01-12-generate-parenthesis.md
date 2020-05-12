@@ -35,7 +35,7 @@ keywords: 算法
 
 如果不符合括号闭合规则的直接 return，回到上一次结果。
 
-```js
+```javascript
 var generateParenthesis = function (n) {
   const results = []
   // 第一次传空字符串

@@ -11,7 +11,7 @@ keywords: JavaScript, 算法
 
 ### DEMO
 
-```js
+```javascript
 function getRandom(userID) {
   var skins = [
     { skin: 1 },
@@ -50,7 +50,7 @@ console.dir(getRandom('abc003'))
 
 [逼乎链接](https://www.zhihu.com/question/22818104)
 
-```js
+```javascript
 // 种子随机数
 function rnd(seed) {
   seed = (seed * 9301 + 49297) % 233280 //为何使用这三个数?

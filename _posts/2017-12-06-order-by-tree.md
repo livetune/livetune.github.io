@@ -23,7 +23,7 @@ keywords: 二叉树, 遍历
 递归的实现比较简单，基本上就是直接对顺序进行递归就可以了。
 
 ## 前序
-```js
+```javascript
 function PreOrderTraverse(parent) {
   if(parent == null) {
     return;
@@ -35,7 +35,7 @@ function PreOrderTraverse(parent) {
 ```
 
 ## 中序
-```js
+```javascript
 function InOrderTraverse(node) {
   if (node == null) {
     return;
@@ -47,7 +47,7 @@ function InOrderTraverse(node) {
 }
 ```
 ## 后序
-```js
+```javascript
 function PostOrderTraverse(node) {
   if (node == null) {
     return;
@@ -65,7 +65,7 @@ function PostOrderTraverse(node) {
 当没有左节点的时候，就可以输出自身，然后出栈。 
 最后再将当前节点设置为父节点的右节点，开始遍历右子树。 
 栈里就一直保存当前值就可以了。
-```js
+```javascript
 function PreOrderTraverse(root, k) {
     let stack = []  // 存储调用栈
     let curr = root // 头结点
@@ -87,7 +87,7 @@ function PreOrderTraverse(root, k) {
 与前面相同，但是在中序里的顺序是中左右。  
 所以，当前节点存在时，直接打印当前节点。然后将右节点压入栈。 
 再将当前节点赋值为左节点。当前节点为null时，就已经没有子节点了，开始遍历栈底也就是离当前节点最近的一个右节点。
-```js
+```javascript
 function inOrder(root) {
     let stack = []  // 存储调用栈
     let curr = root // 头结点

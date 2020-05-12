@@ -74,7 +74,7 @@ keywords: 循环, 轮播图
 
 ## js
 
-```js
+```javascript
 window.onload = function () {
     let a = document.getElementsByClassName('img')[0];
     a.style.width = 110 * 6 + 'px';

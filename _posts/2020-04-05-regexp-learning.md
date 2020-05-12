@@ -13,7 +13,7 @@ keywords: regexp
 
 非贪婪：尽可能少的去匹配
 `?` 可能有也可能没有
-```js
+```javascript
 // 贪婪模式会直接匹配第一个 a 到最后一个 a，无视中间出现的 a
 // 非贪婪模式则是匹配到第二次出现的 a 就停止了
 ('abbbaaccca').match(/a.*a/g) // ['abbbaaccca']
@@ -23,7 +23,7 @@ keywords: regexp
 ### 反向引用
 表达式在匹配时，会将小括号里匹配到的字符串记录下来。获取引用的方法是使用 `\` 加上数字来代表第几次引用。
 
-```js
+```javascript
 // 用于匹配前后出现相同的字符比较方便，如引号等。
 '"hello", \'world\''.match(/('|").*\1/g) // [ '"hello"', "'world'" ]
 
@@ -35,23 +35,23 @@ keywords: regexp
 正向预搜索
 `/y(?=xxxx)/` 匹配后面是 xxxx 的 y 
 
-```js
+```javascript
 'iPhone X'.match(/iPhone(?= X)/g) // ['iPhone'] 
 ```
 `/y(?!xxxx)/` 匹配后面不是 xxxx 的 y
-```js
+```javascript
 'dog,done'.replace(/(do(?!g))/g,'-') //'dog,-ne' 
 ```
 
 反向预搜索（后行断言）  
 `/(?<=xxxx)y/` 匹配前面是 xxxx 的 y 位置
-```js
+```javascript
 'user:1024 free:2048'.match(/(?<=user:)(\d+)/g) // ['1024']
 ```
 
 `/(?<=xxxx)y/` 匹配前面不是 xxxx 的 y 位置 
 
-```js
+```javascript
 '1234.5678'.match(/(?<!\.\d*)\d+/g) // 1234 11 22
 // 小数部分不会被匹配
 ```
