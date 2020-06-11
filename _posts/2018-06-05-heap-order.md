@@ -18,45 +18,38 @@ keywords: 算法,堆排
 1.第n/2的节点开始，如果子节点大于父节点，就将数据中两个值互换。
 ![图片2.png](https://i.loli.net/2018/06/05/5b16634d9d910.png)
   
-2.循环完之后，可得到这个数组中的最大值，也就是数组的第一个值，将其从数组中移去并加入到另一个数组中，开始第二次的循环。
+2.循环完之后，可得到这个数组中的最大值，也就是数组的第一个值。和最后一个值互换，然后继续将数组堆化，每次获得的最大值与数组的最后一个值互换。
 
 ## 代码
 
 ``` javascript
-let arr = [4,5,1,7,3,15,9,11,2,55,10,12];
-let sort_arr = [];
-function heapOrder(arr) {
-    for(let i=parseInt(arr.length/2);i>=0;i--) {
-        max_heap({value:arr[i],index:i});
+var headSort = function (arr) {
+  var swap = function (i, j) {
+    [arr[i], arr[j]] = [arr[j], arr[i]]
+  }
+  var max_heap = function (start, end) {
+    let dad = start
+    let son = start * 2 + 1
+    if (son >= end) {
+      return
     }
-    change_value(0,arr.length-1);
-    sort_arr.push(arr.pop());
-    if(arr.length>0) {
-        return heapOrder(arr);
+    if (son + 1 < end && arr[son] < arr[son + 1]) {
+      son++
     }
-}
-
-function max_heap(node) {
-    let left = {index:node.index*2+1,value:arr[node.index*2+1]}; // left children
-    let right = {index:node.index*2+2,value:arr[node.index*2+2]}; //right children
-    if(left.value===undefined) {  // no children
-        return;
-    } else if(right.value===undefined&&left.value!==undefined) { // own left children
-        left.value>node.value?change_value(left.index,node.index):'';
-    } else {
-        if(node.value<left.value&&left.value>=right.value) { // own left and right children
-            change_value(left.index,node.index)
-        } else if(node.value<right.value&&right.value>=left.value) {
-            change_value(right.index,node.index)
-        }
+    if (arr[dad] < arr[son]) {
+      swap(dad, son)
+      max_heap(son, end)
     }
+  }
+  for (let i = ~~(arr.length / 2) - 1; i >= 0; i--) {
+    max_heap(i, arr.length)
+  }
+  for (let i = arr.length - 1; i >= 0; i--) {
+    swap(0, i)
+    max_heap(0, i)
+  }
 }
-
-function change_value(a,b) {
-    let tmp = arr[a];
-    arr[a]=arr[b];
-    arr[b]=tmp;
-}
-heapOrder(arr);
-console.log(sort_arr);
+var a = [3, 1, 2, 4]
+headSort(a)
+console.log(a)
 ```
